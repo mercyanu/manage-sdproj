@@ -11,11 +11,43 @@
     <!--Navbar with auto margin on x-axis and round padding of 6-->
     <nav class="relative container mx-auto p-6">
       <div class="flex items-center justify-between">
-        <div class="pt-3">
-          <img src="" alt="">
+        <!--item1 - logo-->
+        <div class="pt-2">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <!--menu items-->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-cust_darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-cust_darkGrayishBlue">Product</a>
+          <a href="#" class="hover:text-cust_darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-cust_darkGrayishBlue">Community</a>
+          <a href="#" class="hover:text-cust_darkGrayishBlue">Careers</a>
         </div>
 
+        <!-- button-->
+        <a href="" class="hidden lg:block p-3 px-6 pt-2 text-white bg-cust_brightRed rounded-full baseline hover:bg-cust_brightRedLight">Get Started</a>
       </div>
     </nav>
+<!--------------------------------------------->
+        <!--Hero section-->
+    <section id="hero">
+      <div class="container flex flex-col-reverse items-center px-6 mt-10 space-y-0 md:space-y-0 md:flex-row">
+          <!--word captions-->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+            <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"> Bring everyone together to build better products</h1>
+            <p class="max-w-sm text-center text-cust_darkGrayishBlue md:text-left"> 
+              Manage makes it simple for software development teams to plan day-to-day tasks and milestones while keeping the larger team goal all in view of a all-in-one dashboard. 
+            </p>
+            <div class="flex justify-center md:justify-start">
+            <a href="" class="p-3 px-6 pt-2 text-white bg-cust_brightRed rounded-full baseline hover:bg-cust_brightRedLight">Get Started</a>             
+            </div>
+          </div>
+
+          <!--image section-->
+          <div class="md:w-1/2">
+            <img src="./images/illustration-intro.svg" alt="">
+          </div>
+      </div>
+    </section>      
   </body>
 </html>
