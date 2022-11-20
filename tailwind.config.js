@@ -17,7 +17,7 @@ module.exports = {
         cust_darkGrayishBlue: 'hsl(227, 12%, 61%)',
         cust_xtraDarkBlue: 'hsl(233, 12%, 13%)',
         cust_xtraPaleRed: 'hsl(13, 100%, 96%)',
-        cust_xtraLightGray: 'hsl(12, 88%, 59%)',
+        cust_xtraLightGray: 'hsl(0, 0%, 98%)',
       },
     },
   },
