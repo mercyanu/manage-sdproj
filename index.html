@@ -25,7 +25,24 @@
         </div>
 
         <!-- button-->
-        <a href="" class="hidden lg:block p-3 px-6 pt-2 text-white bg-cust_brightRed rounded-full baseline hover:bg-cust_brightRedLight">Get Started</a>
+        <a onclick=doThis() id="menuBtn" class="hidden lg:block p-3 px-6 pt-2 text-white bg-cust_brightRed rounded-full baseline hover:bg-cust_brightRedLight">Menu</a>
+
+        <!-- Hamburger icon-->
+        <button id="ham" class="block hamburger md:hidden ">
+          <span class="ham-top"></span>
+          <span class="ham-middle"></span>
+          <span class="ham-bottom"></span>
+        </button>
+      </div>
+      <!-- drop-down menu mobile-->
+      <div class="md:hidden">
+        <div id="mobile_menu" class="hidden flex flex-col bg-cust_xtraLightGray py-0 items-center self-center mt-10 rounded-md drop-shadow-lg">
+          <a href="" class="w-full text-center py-5 hover:rounded-t-md hover:bg-cust_brightRedXtraLight">Pricing</a>
+          <a href="" class="w-full text-center py-5 hover:bg-cust_brightRedXtraLight">Product</a>
+          <a href="" class="w-full text-center py-5 hover:bg-cust_brightRedXtraLight">About Us</a>
+          <hr/>
+          <a href="" class="w-full text-center py-5 hover:rounded-b-md hover:bg-cust_brightRedXtraLight">Careers</a>
+        </div>
       </div>
     </nav>
 <!--------------------------------------------->
@@ -155,10 +172,12 @@
 
     <!-- Footer section-->
     <footer class="bg-cust_xtraDarkBlue">
-      <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <div class="container flex flex-col-reverse justify-between px-6 py-16 mx-auto space-y-8 md:flex-row md:space-y-0">
         <!--Logo & Socials-->
         <div class="flex flex-col-reverse justify-between
          items-center space-y-12 md:space-y-0 md:flex-col md:items-start">
+
+        <!-- section is shown on mobile only remove this and the 2 remaining section of the parent container won't space well on mobile-->
          <div class="text-white text-xs mt-6 md:hidden">
           Copyright @ 2022. All rights reserved
         </div>
@@ -201,12 +220,13 @@
         </div>
         <div class="flex flex-col items-center justify-between">
           <form>
-            <div class="flex space-x-3">
-              <input type="text" class="flex-1 px-4 rounded-full focus:outline-none placeholder="Your email address...">
-              <button class="px-6 py-2 text-white rounded-full bg-cust_brightRed hover:bg-cust_brightRedLight focus:outline-yellow"> Send</button>
+            <div class="flex flex-col space-y-6 md:space-x-3 items-center ">
+              <input type="text" class="flex-1 px-4 py-3 rounded-full focus:outline-none"  placeholder="Your email address...">
+              <button class="px-12 py-2 text-white rounded-full bg-cust_brightRed hover:bg-cust_brightRedLight focus:outline-none"> Send</button>
             </div>
           </form>
 
+          <!-- section is hidden on mobile but shows after breakpoint-->
           <div class="hidden block text-white text-xs md:block">
             Copyright @ 2022. All rights reserved
           </div>
@@ -214,5 +234,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
